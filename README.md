@@ -7,6 +7,17 @@ Python command line appliction that accepts Python code via a pointer to externa
 
 ## Usage
 
+To generate the code
+
+```python
+from dynamic_runner import serialize
+
+serialized = serialize(my_func, *args, **kwargs)
+# Then store serialized in Redis
+```
+
+Then to run it
+
 ```shell
-python -m dynamic_runner run my-redis-instance my-redis-instance
+python -m dynamic_runner run my-redis-instance my-redis-key
 ```
