@@ -5,5 +5,8 @@ Python command line appliction that accepts Python code via a pointer to externa
 > **SECURITY** This application offers a way of running arbitrary Python code - very little is offered in the way of limiting what the code can do. Any sandboxing or other protections must be in place external to this application.
 
 
+## Usage
+
+```shell
+python -m dynamic_runner run my-redis-instance my-redis-instance
 ```
-python -m python-runner
